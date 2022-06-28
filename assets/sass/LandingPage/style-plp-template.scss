@@ -1,0 +1,255 @@
+
+@import "../plp-defaults";
+
+.new-template {
+
+    &.product-landing-page {
+        background-color: $white-FFFFFF;
+
+        &.plp-ssl-ov-wildcard {
+            .btn {
+                background-color: $green-09591C;
+                font-weight: $f-medium;
+                font-size: $px-16;
+
+                &:hover {
+                    background-color: $green-4FD96E;
+                    color: $green-064014;
+                }
+
+                &.btn-outline {
+                    border-color: $green-09591C;
+                    color: $green-09591C;
+                    font-weight: $f-semiBold;
+                    font-size: $px-16;
+
+                    &:hover {
+                        background-color: $green-09591C !important;
+                        color: $white-FFFFFF;
+                    }
+                }
+
+                &.btn-link {
+                    background-color: transparent;
+                    color: $grey-494F54;
+                }
+            }
+
+            .price {
+                font-weight: $f-bold;
+            }
+
+            h1, h2 {
+                color: $green-09591C;
+            }
+
+            h1 {
+                font-weight: $f-bold;
+                font-size: $px-25;
+            }
+
+            h2 {
+                font-weight: $f-bold !important;
+                font-size: $px-18;
+                line-height: $px-24;
+            }
+
+            p {
+                font-weight: $f-regular;
+                font-size: $px-16;
+                color: $grey-404040;
+            }
+
+            .breadcrumb-plp {
+                li {
+                    ::after {
+                        color: $grey-383E43;
+                    }
+                    a {
+                        color: $grey-383E43;
+                    }
+                }
+            }
+
+            .banner {
+                .banner-content {
+                    
+                    >:nth-child(2) {
+                        border: solid $px-1 $green-C9DACD;
+
+                        p {
+                            color: $grey-404040;
+                        }
+                    }
+
+                    p {
+                        span {
+                            color: $green-09591C;
+                        }
+                    }
+
+                }
+            }
+
+            .bg-grey-F1F1F1 {
+                background-color:  $grey-F1F1F1;
+
+                h2 {
+                    font-weight: $f-bold;
+                    font-size: $px-18;
+                    line-height: $px-20;
+                }
+            }
+
+            .carousel-plp-default {
+                .item {
+                    .card {
+                        figure {
+                            .figure-caption {
+                                background-color: $green-09591C;
+                            }
+                        }
+        
+                        .card-body {
+                            h5 {
+                                color: $green-09591C;
+                            }
+                        }
+                    }
+                }
+        
+                .owl-dots {
+                    span {
+                        border: solid $px-1 $green-09591C;
+                    }
+        
+                    .owl-dot.active {
+                        span {
+                            background-color: $green-09591C;
+                        }
+                    }
+                }
+            }
+
+            .steps {
+                .step {
+                    color: $green-09591C;
+
+                    ::after {
+                        color: $green-4FD96E;
+                    }
+                    span {
+                        color: $grey-383E43;
+                    }
+                }
+            }
+
+            .bg-grad-4fd96e-064014 {
+                background: linear-gradient(119deg, #4fd96e 0%, #2d9244 11%, #064014 100%);
+
+                .cta-content-fluid {
+                    text-align: center;
+
+                    img {
+                        width: $px-40;
+                    }
+
+                    h2 {
+                        color: $white-FFFFFF;
+                        font-size: $px-20;
+                        line-height: $px-25;
+                    }
+
+                    .btn {
+                        &.btn-outline {
+                            border: solid 2px $white-FFFFFF;
+                            color: $white-FFFFFF;
+                            font-weight: $f-medium;
+                            font-size: $px-16;
+                            padding-top: $px-5;
+                            padding-bottom: $px-5;
+    
+                            &:hover {
+                                background-color: $white-FFFFFF !important;
+                                color: $green-064014;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cta-fixed-plp {
+                p {
+                    &:nth-child(2) {
+                        color: $green-09591C !important;
+                    }
+                }
+            }
+
+            ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
+
+            // 544px
+            @media screen and (min-width: calc(#{$px-50} * 10 + #{$px-40} + #{$px-4})) {
+
+                .btn-outline {
+                    display: block;
+                    max-width: calc(20 * #{$px-25});
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .banner {
+                    .banner-content {
+                        border: solid $px-1 $green-C9DACD;
+
+                        p {
+                            line-height: $px-25;
+                        }
+                    }
+                }
+            }
+
+            // 993px
+            @media screen and (min-width: calc(#{$px-50} * 20 - #{$px-7})) {
+
+                .bg-grad-4fd96e-064014 {
+                    background: linear-gradient(95deg, #4fd96e 0%, #2d9244 17%, #064014 100%);
+    
+                    .cta-content-fluid {
+                        text-align: left;
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        img {
+                            width: auto;
+                            display: block;
+                        }
+    
+                        h2 {
+                            font-size: $px-24;
+                        }
+
+                        .btn {
+                            &.btn-outline {
+                                max-width: calc(#{$px-50} * 4 + #{$px-7});
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 1367px
+            @media screen and (min-width: calc(#{$px-50} * 26 + #{$px-50} + #{$px-17})) {
+                .banner {
+                    .banner-content {
+                        p {
+                            line-height: calc(#{$px-20} + #{$px-15});
+                        }
+                    }
+                }
+             }
+        }
+    }
+}

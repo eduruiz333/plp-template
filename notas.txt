@@ -1,0 +1,43 @@
+############################################################################################################
+########################################### LANDINGPAGE TEMPLATE ###########################################
+############################################################################################################
+
+CONFIGURAÇÃO ATUAL PARA COMPILAR SASS COM O GULP
+
+npm init
+npm install gulp gulp-sass sass --save-dev
+
+Criar o arquivo gulpfile.js (MODELO FUNCIONANDO MUITO BEM AGORA)
+
+utilizar o comando "gulp" (sem as aspas) para rodar o compilador
+
+############################################################################################################
+
+Paths para colocar no salesforce
+CSS
+/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/lp-ssl/xxx.jpg
+
+HTML
+/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/lp-ssl/xxx.jpg?$staticlink$
+
+############################################################################################################
+
+NA SANDBOX
+
+Criar dentro do "nacional" (sandbox) - 
+
+npm run compile:scss
+npm run compile:js
+npm run build
+
+utilizar o prophet upload no terminal - output
+
+############################################################################################################
+
+++ PLUS ++
+Substituindo o plugin Beautify pelo comando nativo do VSCOD
+
+On Windows Shift + Alt + F.
+On Mac Shift + Option + F.
+On Linux Ctrl + Shift + I.
+

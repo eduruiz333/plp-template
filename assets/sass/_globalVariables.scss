@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+$font: 'Poppins',
+sans-serif;
+
+$f-light: 300;
+$f-regular: 400;
+$f-medium: 500;
+$f-semiBold: 600;
+$f-bold: 700;
+
+* {
+    font-family: $font;
+}
+
+$white: #ffffff;
+$link: #0645AD;
+$blue:#004165;
+$orange: #FFA100;
+$dark-orange: #D47500;
+$grey-nh: #6F7178;
+$medium-grey-nh: #7F7F7F;
+$dark-grey-nh: #494F54;
+
+$bg-grey-nh: #E8E8E8;
+$bg-light-grey: #F6F6F8;
+$hover-btn: #d1d1d1;
+
