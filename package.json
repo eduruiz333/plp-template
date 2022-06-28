@@ -1,27 +1,27 @@
 {
-  "name": "lp-varejo",
+  "name": "lp-template",
   "version": "1.0.0",
+  "description": "",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduruiz333/lp-varejo.git"
+    "url": "git+https://github.com/eduruiz333/plp-template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eduruiz333/lp-varejo/issues"
+    "url": "https://github.com/eduruiz333/plp-template/issues"
   },
-  "homepage": "https://github.com/eduruiz333/lp-varejo#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.53.0"
-  },
-  "description": ""
+  "homepage": "https://github.com/eduruiz333/plp-template#readme"
 }
