@@ -15,16 +15,310 @@ $f-bold: 700;
     font-family: $font;
 }
 
+// ESQUEMA DE CORES LEGADO, NÃO APAGAR POR ENQUANTO
+
 $white: #ffffff;
 $link: #0645AD;
 $blue:#004165;
-$orange: #FFA100;
+$orange: #FF8F00;
 $dark-orange: #D47500;
-$grey-nh: #6F7178;
-$medium-grey-nh: #7F7F7F;
-$dark-grey-nh: #494F54;
+$grey: #6F7178;
+$medium-grey: #7F7F7F;
+$dark-grey: #494F54;
 
-$bg-grey-nh: #E8E8E8;
+$bg-grey: #E8E8E8;
 $bg-light-grey: #F6F6F8;
 $hover-btn: #d1d1d1;
 
+// NOVO ESQUEMA DE CORES PADRONIZADO
+// NOME DA COR DOMINANTE, SEGUIDO DE UM HÍFEM E O CÓDIGO HEXA DA COR
+// ATENÇÃO: LEMBRANDO QUE CSS É CASE SENSITIVE, OS CÓDIGOS HEXA PODEM TER NÚMEROS E LETAS, PARA MELHOR VISUALIZAÇÃO, CONVENCIONAMOS POR UTILIZAR AS LETRAS EM MAIÚSCULAS
+
+$blue-003A5D: #003A5D;
+$blue-004165: #004165;
+$blue-004C86: #004C86;
+$blue-0056AF: #0056AF;
+$blue-0645AD: #0645AD;
+$grey-404040: #404040;
+$grey-383E43: #383E43;
+$grey-494F54: #494F54;
+$grey-707070: #707070;
+$grey-7F7F7F: #7F7F7F;
+$grey-F1F1F1: #F1F1F1;
+$grey-DEDEDE: #DEDEDE;
+$grey-E8E8E8: #E8E8E8;
+$green-064014: #064014;
+$green-09591C: #09591C;
+$green-4FD96E: #4FD96E;
+$green-C9DACD: #C9DACD;
+$magenta-A51DE1: #A51DE1;
+$orange-C94B00: #C94B00;
+$orange-D47500: #D47500;
+$orange-FFA100: #FFA100;
+$white-FFFFFF: #FFFFFF;
+
+// NOVO ESQUEMA DE TAMANHOS DE FONTES
+$px-1: 0.063rem;
+$px-2: 0.125rem;
+$px-3: 0.188rem;
+$px-4: 0.25rem;
+$px-5: 0.313rem;
+$px-6: 0.375rem;
+$px-7: 0.438rem;
+$px-8: 0.5rem;
+$px-9: 0.563rem;
+$px-10: 0.625rem;
+$px-11: 0.688rem;
+$px-12: 0.75rem;
+$px-13: 0.813rem;
+$px-14: 0.875rem;
+$px-15: 0.938rem;
+$px-16: 1rem;
+$px-17: 1.063rem;
+$px-18: 1.125rem;
+$px-19: 1.188rem;
+$px-20: 1.25rem;
+$px-21: 1.313rem;
+$px-22: 1.375rem;
+$px-23: 1.438rem;
+$px-24: 1.5rem;
+$px-25: 1.563rem;
+$px-26: 1.625rem;
+$px-27: 1.688rem;
+$px-28: 1.75rem;
+$px-29: 1.813rem;
+$px-30: 1.875rem;
+$px-40: 2.5rem;
+$px-50: 3.125rem;
+
+.new-template {
+    * {
+        font-family: $font;
+    }
+
+    .btn {
+        color: $white;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:target,
+        &:visited,
+        &:link {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        &.btn-outline {
+            background-color: transparent !important;
+            border: solid $px-1;
+            color: inherit;
+        }
+    }
+
+    .modal {
+        &.nova-home {
+            padding-right: 0;
+
+            .modal-dialog {
+                max-width: 450px;
+                border-radius: 10px;
+
+                .modal-content {
+                    margin: 0;
+
+                    .modal-body {
+                        padding: 0;
+
+                        &.msn-sucesso {
+
+                            background-color: transparent;
+                            -webkit-box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.26);
+                            box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.26);
+
+                            border-radius: 10px;
+
+                            .box-icon {
+
+                                width: 100%;
+                                background-color: #E2F0DF;
+                                height: 148px;
+                                padding-top: 46px;
+                                border-top-left-radius: 10px;
+                                border-top-right-radius: 10px;
+
+                                .icon-sucesso {
+                                    background: url("../images/lp-certicredit/icon-sucesso.png") 0 0 no-repeat;
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            .box-msn {
+
+                                height: auto;
+                                background-color: #fff;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                padding: 30px 0 30px 0;
+
+                                h1 {
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    color: #009900;
+                                    text-align: center;
+
+                                }
+
+                                p {
+                                    text-align: center;
+
+                                    span {
+
+                                        display: block;
+                                        text-align: center;
+
+                                    }
+                                }
+
+                            }
+
+                            .btn-fechar {
+                                cursor: pointer;
+                                font-size: 16px;
+                                background-color: #009900;
+                                outline: none;
+                                border: none;
+                                text-align: left;
+                                border-radius: 10px;
+                                display: table;
+                                color: $white;
+                                line-height: 45px;
+                                width: 128px;
+                                margin: 0 auto;
+                                text-align: center;
+                                margin-top: 30px;
+
+                                &:hover {
+
+                                    text-decoration: none;
+                                    background-color: #6D2177;
+                                }
+
+                                &::after {
+
+                                    &:focus,
+                                    &:active {
+                                        outline: none;
+                                        border: navy;
+                                        box-shadow: none;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /////////////////////////////////////////////////////
+    // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+    .container-fluid {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0;
+
+        &.banner {
+            //height: 465px;
+            padding: 0;
+            margin: 0;
+
+            .container {
+                padding: 25px 20px;
+
+                .row,
+                .col {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .container {
+        padding: 0 20px;
+    }
+    // ATÉ AQUI
+    /////////////////////////////////////////////////////
+
+
+    ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
+
+    // 544px
+    @media screen and (min-width: calc(#{$px-50} * 10 + #{$px-40} + #{$px-4})) {
+        /////////////////////////////////////////////////////
+        // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+        .banner {
+            .container {
+                max-width: 768px;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+        .container {
+            max-width: 768px;
+        }
+        // ATÉ AQUI
+        /////////////////////////////////////////////////////
+    }
+
+    // 993px
+    @media screen and (min-width: calc(#{$px-50} * 20 - #{$px-7})) {
+        /////////////////////////////////////////////////////
+        // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+        .banner {
+            .container {
+                max-width: 993px;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+        .container {
+            max-width: 993px;
+        }
+        // ATÉ AQUI
+        /////////////////////////////////////////////////////
+    }
+
+    // 1367px
+    @media screen and (min-width: calc(#{$px-50} * 26 + #{$px-50} + #{$px-17})) {
+        ///////////////////////////////////////////////////// 
+        // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+        .banner {
+            .container {
+                max-width: 1200px;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+        .container {
+            max-width: 1200px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        // ATÉ AQUI
+        /////////////////////////////////////////////////////
+    }
+}
