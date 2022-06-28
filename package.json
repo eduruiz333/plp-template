@@ -1,11 +1,12 @@
 {
-  "name": "lp-template",
+  "name": "plp-template",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
   },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
