@@ -61,7 +61,7 @@
                             <div class="col-12 px-0 mx-0">
                                 <div class="banner-content">
                                     <div>
-                                        <img src="/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-ov-wildcard/armazem-caixas.jpg?$staticlink$" alt="Caixas com compras feitas em e-commerce com certificado de segurança SSL">
+                                        <img src="https://dev07.loja.certisign.com.br/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-ov-wildcard/armazem-caixas.jpg?$staticlink$" alt="Caixas com compras feitas em e-commerce com certificado de segurança SSL">
                                     </div>
                                     <div>
                                         <h2 class="mb-sm-0 mb-md-2">Certificado SSL OV Wildcard</h2>
@@ -116,7 +116,7 @@
                                     <div class="item">
                                         <div class="card">
                                             <figure class="figure">
-                                                <img src="/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-dv/mulher-notebook.jpg?$staticlink$" class="figure-img img-fluid rounded" alt="Pessoa no notebook fazendo um atendimento on-line">
+                                                <img src="https://dev07.loja.certisign.com.br/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-dv/mulher-notebook.jpg?$staticlink$" class="figure-img img-fluid rounded" alt="Pessoa no notebook fazendo um atendimento on-line">
                                                 <figcaption class="figure-caption">Lojas virtuais</figcaption>
                                               </figure>
                                             <div class="card-body">
@@ -132,7 +132,7 @@
                                     <div class="item">
                                         <div class="card">
                                             <figure class="figure">
-                                                <img src="/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-ov-wildcard/tmb-teclado-caneca.jpg?$staticlink$" class="figure-img img-fluid rounded" alt=" Imagem lúdica, com lâmpada e café, remetendo a imaginação e criatividade em sites de conteúdo ou blogs">
+                                                <img src="https://dev07.loja.certisign.com.br/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-ov-wildcard/tmb-teclado-caneca.jpg?$staticlink$" class="figure-img img-fluid rounded" alt=" Imagem lúdica, com lâmpada e café, remetendo a imaginação e criatividade em sites de conteúdo ou blogs">
                                                 <figcaption class="figure-caption">Blog</figcaption>
                                               </figure>
                                             <div class="card-body">
@@ -148,7 +148,7 @@
                                     <div class="item">
                                         <div class="card">
                                             <figure class="figure">
-                                                <img src="/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-dv/caixa.jpg?$staticlink$" class="figure-img img-fluid rounded" alt="Caixa embalada para entrega, exemplificando o serviço de e-commerce">
+                                                <img src="https://dev07.loja.certisign.com.br/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw7fcbf09e/images/Landing/ssl-dv/caixa.jpg?$staticlink$" class="figure-img img-fluid rounded" alt="Caixa embalada para entrega, exemplificando o serviço de e-commerce">
                                                 <figcaption class="figure-caption">e-Commerce</figcaption>
                                               </figure>
                                             <div class="card-body">
@@ -311,48 +311,45 @@
 <script src="./assets/js/owl.carousel.min.js"></script>
 
 <script>
-    // CONFIG SLIDERS BANNER
-    $('.home-slider').owlCarousel({
-        autoplay: true,
-        lazyLoad: true,
-        loop: true,
-        responsiveClass: true,
-        autoHeight: true,
+    $('.carousel-plp-default').owlCarousel({
+        autoplay: false,
+        loop: false,
+        margin:10,
         autoplayTimeout: 7000,
         smartSpeed: 800,
+        lazyLoad: true,
+        responsiveClass:false,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
                 nav: false,
-                dots: false
+                dots: true
             },
             544: {
-                items: 1,
+                items: 3,
                 nav: false,
-                dots: true
-            },
-            993: {
-                items: 1,
-                nav: false,
-                dots: true
+                dots: false
             }
         }
     })
-
-    // CONBFIG SLIDRES COUNTER
-    $('.slider').on('initialized.owl.carousel changed.owl.carousel', function (e) {
-        if (!e.namespace) {
-            return;
+    
+    $(window).scroll(function(){
+        const screen = window.screen.width;
+        
+        if(screen <= 544) {
+            if ($(this).scrollTop() < 460) {
+                $('.cta-fixed-plp').removeClass('toogle-cta-plp');
+              } else {
+                $('.cta-fixed-plp').addClass('toogle-cta-plp');
+              }
+        } else if (screen > 544) {
+            if ($(this).scrollTop() < 465) {
+                $('.cta-fixed-plp').removeClass('toogle-cta-plp');
+              } else {
+                $('.cta-fixed-plp').addClass('toogle-cta-plp');
+              }
         }
-        var carousel = e.relatedTarget;
-        $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
-    }).owlCarousel({
-        items: 1,
-        loop: false,
-        margin: 0,
-        dots: false,
-        nav: true
-    });
+      });
 </script>
 
 </html>

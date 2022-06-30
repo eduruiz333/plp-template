@@ -7,7 +7,7 @@ CONFIGURAÇÃO ATUAL PARA COMPILAR SASS COM O GULP
 npm init
 npm install gulp gulp-sass sass --save-dev
 
-Criar o arquivo gulpfile.js (MODELO FUNCIONANDO MUITO BEM AGORA)
+Criar o arquivo gulpfile.js
 
 utilizar o comando "gulp" (sem as aspas) para rodar o compilador
 

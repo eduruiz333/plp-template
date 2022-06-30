@@ -44,6 +44,8 @@ $grey-383E43: #383E43;
 $grey-494F54: #494F54;
 $grey-707070: #707070;
 $grey-7F7F7F: #7F7F7F;
+$grey-DCDCDC: #DCDCDC;
+$grey-F6F6F6: #F6F6F6;
 $grey-F1F1F1: #F1F1F1;
 $grey-DEDEDE: #DEDEDE;
 $grey-E8E8E8: #E8E8E8;
@@ -56,8 +58,9 @@ $orange-C94B00: #C94B00;
 $orange-D47500: #D47500;
 $orange-FFA100: #FFA100;
 $white-FFFFFF: #FFFFFF;
+$black-000000: #000000;
 
-// NOVO ESQUEMA DE TAMANHOS DE FONTES
+// NOVO ESQUEMA DE TAMANHOS DE FONTES EX: height: calc(#{$px-30} * 4 + #{$px-15});
 $px-1: 0.063rem;
 $px-2: 0.125rem;
 $px-3: 0.188rem;
@@ -263,7 +266,7 @@ $px-50: 3.125rem;
 
 
     ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
-
+    
     // 544px
     @media screen and (min-width: calc(#{$px-50} * 10 + #{$px-40} + #{$px-4})) {
         /////////////////////////////////////////////////////
@@ -281,7 +284,7 @@ $px-50: 3.125rem;
         // ATÉ AQUI
         /////////////////////////////////////////////////////
     }
-
+    
     // 993px
     @media screen and (min-width: calc(#{$px-50} * 20 - #{$px-7})) {
         /////////////////////////////////////////////////////
